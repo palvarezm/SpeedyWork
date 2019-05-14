@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_logo_background">#e53935</color>
+    <color name="full_logo_foreground">#FFFFFF</color>
 </resources>
