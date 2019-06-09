@@ -6,13 +6,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.activities.SplashScreenActivity"
-    android:background="@color/ic_logo_background">
+        android:background="@color/ic_logo_background">
 
     <ImageView
         android:id="@+id/ivLogo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/ic_logo_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_sw"
         android:layout_gravity="center" />
 
     <TextView
