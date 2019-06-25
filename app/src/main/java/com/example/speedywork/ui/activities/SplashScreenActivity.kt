@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import com.example.speedywork.R
-import com.example.speedywork.ui.utils.Animation
+import com.example.speedywork.utils.Animation
 import kotlinx.android.synthetic.main.activity_main.*
 
 class SplashScreenActivity : AppCompatActivity() {
