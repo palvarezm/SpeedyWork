@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SpeedyWork</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="bt_login">INGRESAR</string>
 </resources>

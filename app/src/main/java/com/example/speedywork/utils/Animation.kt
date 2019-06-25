@@ -1,4 +1,4 @@
-package com.example.speedywork.ui.utils
+package com.example.speedywork.utils
 
 import android.app.Activity
 import com.example.speedywork.R
