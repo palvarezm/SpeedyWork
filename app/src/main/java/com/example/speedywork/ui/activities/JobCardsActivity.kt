@@ -20,6 +20,7 @@ import com.example.speedywork.models.Spot
 import com.example.speedywork.utils.SpotDiffCallback
 import com.google.android.material.navigation.NavigationView
 import com.yuyakaido.android.cardstackview.*
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class JobCardsActivity : AppCompatActivity(), CardStackListener {
 
@@ -48,7 +49,17 @@ class JobCardsActivity : AppCompatActivity(), CardStackListener {
     }
 
     override fun onCardSwiped(direction: Direction) {
-        Log.d("CardStackView", "onCardSwiped: p = ${manager.topPosition}, d = $direction")
+        //TODO: Change to a better logic to find a match
+        if (manager.topPosition >= adapter.itemCount-6){
+            val cardView = findViewById<View>(R.id.itemCard)
+            val textView = cardView.findViewById<TextView>(R.id.item_name)
+            MaterialAlertDialogBuilder(this).setPositiveButton("Aceptar", null).create().apply {
+                setTitle("Exito")
+                setMessage("Conseguiste un trabajo")
+                show()
+            }
+
+        }
         if (manager.topPosition == adapter.itemCount - 5) {
             paginate()
         }
