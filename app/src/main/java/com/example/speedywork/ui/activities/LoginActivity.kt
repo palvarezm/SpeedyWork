@@ -1,11 +1,10 @@
 package com.example.speedywork.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.EditText
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
 import com.example.speedywork.R
 import com.example.speedywork.utils.UsersList
 import com.example.speedywork.utils.validate
@@ -31,12 +30,9 @@ class LoginActivity : AppCompatActivity() {
             password = tietPassword.text.toString()
 
             if (tietEmail.validate(notEmpty, tilEmail, "Debe ingresar su correo") && tietPassword.validate(notEmpty, tilPassword, "Debe llenar su contraseña")){
-                if (usersList.users.contains(username) && (usersList.passwords.contains(password))){
-                    MaterialAlertDialogBuilder(this).setPositiveButton("Aceptar", null).create().apply {
-                        setTitle("Exito")
-                        setMessage("Datos de ingreso correctos")
-                        show()
-                    }
+                if ((usersList.users.contains(username)) && (usersList.passwords.contains(password))){
+                    intent = Intent(this, JobCardsActivity::class.java)
+                    startActivity(intent)
                 }
                 else{
                     MaterialAlertDialogBuilder(this).setPositiveButton("Aceptar", null).create().apply {

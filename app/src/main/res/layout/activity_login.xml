@@ -42,6 +42,7 @@
                 android:padding="8dp"
                 android:imeOptions="actionNext"
                 android:textColor="@color/colorWhite"
+                android:text="contacto@speedywork.com"
                 android:inputType="textEmailAddress|textNoSuggestions"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,6 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
+                android:text="123456"
                 android:imeOptions="actionNext"
                 android:inputType="textPassword|textNoSuggestions"/>
         </com.google.android.material.textfield.TextInputLayout>
